@@ -25,6 +25,7 @@ class Os_Directory():
             file_copy.close()
 
     def os_copy_binary(self):
+        '''copy file from current directory to given directory'''
         file_name = str(self.files[int(input(
                         self.get_wd(header="Select a file from ") + '\n:'))])
         new_path = input('Enter target directory:')
